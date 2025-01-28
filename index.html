@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+      <!-- Pantalla de Inicio -->
+      <div id="pantalla-inicio" class="pantalla-inicio">
+        <h1>¡Bienvenido al Juego de Piedra, Papel o Tijera!</h1>
+        <p>Creado por: @RaulDev</p>
+        <button id="comenzar-juego">Comenzar Juego</button>
+    </div>
+
+    <!-- Contenedor del Juego -->
+    <div id="pantalla-juego">
+    <h1>¡Piedra, Papel o Tijera!</h1>
+        <div id="choices">
+            <button data-choice="piedra"><img src="assets/piedra.png" alt="Piedra">Piedra</button>
+            <button data-choice="papel"><img src="assets/papel.png" alt="Papel">Papel</button>
+            <button data-choice="tijera"><img src="assets/tijera.png" alt="Tijera">Tijera</button>
+        </div>
+        <!--Resultado del juego-->
+        <div id="result">
+            <h2>Resultado:</h2>
+            <div id="elecciones">
+                <img id="img-usuario" src="" alt="Tu elección">
+                <span>vs</span>
+                <img id="img-computadora" src="" alt="Elección de la IA">
+            </div>
+            <p id="message">Elige una opción para jugar.</p>
+        </div>
+
+        <!--TABLA DE PUNTOS-->
+        <div id="score">
+            <table>
+                <tr>
+                    <th>Jugador</th>
+                    <th>IA</th>
+                </tr>
+                <tr>
+                    <td id="jugador-puntaje">0</td>
+                    <td id="computadora-puntaje">0</td>
+                </tr>
+            </table>
+        </div>
+
+        <!--BOTON PARA REINCIAR EL JUEGO-->
+        <div class="botones-accion">
+            <button id="reiniciar">Reiniciar</button>   
+        </div>
+
+
+
+    </div>
+    <script src="juego.js"></script> <!--Enlazamos con el archivo javascript (contiene la logica del juego) -->
+</body>
+</html>
