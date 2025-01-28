@@ -45,9 +45,9 @@ function jugar(eleccionUsuario) {
     const imgComputadora = document.getElementById('img-computadora');
 
     // Actualizamos las imágenes de las elecciones
-    imgUsuario.src = `assets/${eleccionUsuario}.png`;
+    imgUsuario.src = `${eleccionUsuario}.png`;
     imgUsuario.alt = `Tu elección: ${eleccionUsuario}`;
-    imgComputadora.src = `assets/${eleccionComputadora}.png`;
+    imgComputadora.src = `${eleccionComputadora}.png`;
     imgComputadora.alt = `Elección de la IA: ${eleccionComputadora}`;
 
     // Determinar el resultado
